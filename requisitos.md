@@ -10,23 +10,23 @@ O sistema deverá ser capaz de possibilitar que os usuarios curtam postagens e c
 
 O sistema deverá exibir postagens de usuários (timeline).
 
-### RNF 03
+### RF 03
 
 O sistema deverá ser capaz de armazenar nome, email e senha.
 
-### RNF 04
+### RF 04
 
 O sistema deverá permmitir cadastro de usuarios e administradores (consultar,excluir e alterar).
 
-### RNF 05
+### RF 05
 
 O sistema deverá ser capaz de armazenar nome, email e senha.
 
-### RNF 06
+### RF 06
 
 A rede deverá ter uma Utilização de Sessão para controle de usuários.
 
-### RNF 07
+### RF 07
 
 A rede deverá possuir ferramenta de busca de perfil de usuário.
 
