@@ -4,18 +4,46 @@
 
 ### RF 01
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nulla vel diam vehicula, eu porttitor nulla aliquam.
+O sistema deverá ser capaz de possibilitar que os usuarios curtam postagens e comentarios.
 
 ### RF 02
 
-Nullam laoreet, mauris ac tempor vulputate, orci metus aliquet augue, at accumsan odio mi eu sapien. Aliquam tincidunt metus ut aliquet vehicula. Aliquam vitae arcu sed lacus fermentum sagittis.
+O sistema deverá exibir postagens de usuários (timeline).
+
+### RNF 03
+
+O sistema deverá ser capaz de armazenar nome, email e senha.
+
+### RNF 04
+
+O sistema deverá permmitir cadastro de usuarios e administradores (consultar,excluir e alterar).
+
+### RNF 05
+
+O sistema deverá ser capaz de armazenar nome, email e senha.
+
+### RNF 06
+
+A rede deverá ter uma Utilização de Sessão para controle de usuários.
+
+### RNF 07
+
+A rede deverá possuir ferramenta de busca de perfil de usuário.
 
 ## Requisitos Não-Funcionais
 
 ### RNF 01
 
-Nulla facilisi. Etiam tempus dolor et odio tincidunt fermentum. Donec pharetra nulla eu euismod maximus. Maecenas eu mauris tincidunt, pulvinar tellus sed, blandit eros.
+O sistema deverá se comunicar com o banco de dados. 
 
 ### RNF 02
 
-Nam id enim ut quam faucibus scelerisque at non diam. Morbi eget eleifend lectus, quis fringilla elit. Morbi iaculis, elit vel accumsan hendrerit, ipsum purus varius lacus, eget facilisis massa mauris ac ipsum.
+O sistema deverá ser desenvolvido nos linguagens:CSS,HTMl5 e JAVASCRIPT.
+
+### RNF 03
+
+O sistema deverá registrar as informações em um banco de dados mysql.
+
+### RNF 04
+
+O sistema deverá ter controle de acesso com utilização de criptografia e autentição.
