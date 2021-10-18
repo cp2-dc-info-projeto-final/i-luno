@@ -2,15 +2,19 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): Quisque id neque a erat imperdiet dictum et ut mauris.
- - [CDU 02](#CDU-02): Morbi fringilla dolor at mattis vestibulum.
- - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+ - [CDU 01](#CDU-01): Efetuar login;
+ - [CDU 02](#CDU-02): Cadastrar aluno;
+ - [CDU 03](#CDU-03): Fazer posts;
+ - [CDU 04](#CDU-04): Curtir posts;
+ - [CDU 05](#CDU-05): Comentar posts;
+ - [CDU 06](#CDU-06): Salvar posts;
+
 
 
 ## Lista dos Atores
 
- - Cras tempor
- - Donec a lorem
+ - Usuários; 
+ - Administradores;
 
 ## Diagrama de Casos de Uso
 
