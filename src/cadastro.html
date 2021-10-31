@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #43a759;}
+
+/* Classe responsável pelo padrão do */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #43a759;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  size: 50px;
+}
+
+img.logo {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+  
+
+</style>
+</head>
+<body>
+
+<h2>Efetue seu cadastro abaixo : </h2>
+
+<form action="cadastro.php" method="post">
+  <div class="imgcontainer">
+    <img src="logo.png" class="logo">
+  </div>
+
+  <div class="container">
+    
+    <label for="uname"><b>Nome completo</b></label>
+    <input type="text" placeholder="Insira seu nome completo" name="uname" required>
+    
+    <label for="uname"><b>Nome de usuário</b></label>
+    <input type="text" placeholder="Crie seu nome de usuário" name="uname" required>
+
+    <label for="psw"><b>Crie sua senha</b></label>
+    <input type="password" placeholder="Crie sua senha" name="psw" required>
+
+    <label for="psw"><b>Repita sua senha</b></label>
+    <input type="password" placeholder="Confrime a sua senha" name="psw" required>
+        
+    <button type="submit" value="Cadastrar" style="background-color:#43a759">Cadastre-se</button>
+  </div>
+    
+</form>
+
+</body>
+</html>
