@@ -27,125 +27,122 @@
 
  **Fluxo Principal**
 
-1.O sistema exibirá um formulário com os campos login e senha.
-2.O usuário deve inserir o login e a senha  e clicar no botão de "ENTRA". 
-3.O sistema valida login e senha do usuário.
-4.O sistema encaminha o usuário para a página inicial.
+1. O sistema exibirá um formulário com os campos login e senha.
+2. O usuário deve inserir o login e a senha  e clicar no botão de "ENTRA". 
+3. O sistema valida login e senha do usuário.
+4. O sistema encaminha o usuário para a página inicial.
 
 **Fluxo Alternativo A**
 
-1.O sistema exibirá um formulário com os campos login e senha.
-2.O usuário deve inserir o login e a senha e clicar no botão de "ENTRA".
-3.O sistema informa que a senha está incorreta.
-4.O usuário corrigir a senha e clica no botão "ENTRA".
-5.O sistema encaminha o usuário para a página inicil.
+1. O sistema exibirá um formulário com os campos login e senha.
+2. O usuário deve inserir o login e a senha e clicar no botão de "ENTRA".
+3. O sistema informa que a senha está incorreta.
+4. O usuário corrigir a senha e clica no botão "ENTRA".
+5. O sistema encaminha o usuário para a página inicil.
 
 
 **Fluxo Alternativo B**
 
-1.O sistma exibirá um formulário com os campos login e senha.
-2.O usuário deve inserir o login e a senha  e clicar no botão  "ENTRA".
-3.O sistema informa que o login  está incorreto.
-4.O usuário digita corretamente o login e clica no botão "ENTRA". 
-5.O sistema encaminha o usuário para a página inicial.
+1. O sistma exibirá um formulário com os campos login e senha.
+2. O usuário deve inserir o login e a senha  e clicar no botão  "ENTRA".
+3. O sistema informa que o login  está incorreto.
+4. O usuário digita corretamente o login e clica no botão "ENTRA". 
+5. O sistema encaminha o usuário para a página inicial.
 
 **Fluxo Alternativo c**
-1.O sistema exibirá um formulário com os campos login e senha.
-2.O usuário deve insere login e sua senha e clica no botão “ENTRA”.
-3.O sistema informa que o login e a senha não coincidem.
-4.O usuário digita corretamente as informações de login e senha e clica no botão “ENTRA”.
-5.O sistema encaminha o usuário para sua tela inicial.
+1. O sistema exibirá um formulário com os campos login e senha.
+2. O usuário deve insere login e sua senha e clica no botão “ENTRA”.
+3. O sistema informa que o login e a senha não coincidem.
+4. O usuário digita corretamente as informações de login e senha e clica no botão “ENTRA”.
+5. O sistema encaminha o usuário para sua tela inicial.
 
 
 ### CDU 02  cadastro de usuário 
 
 **Fluxo Principal**
 
-1.O sistema apresentara um formulário com os campos do usuário a ser inserido
-2.O usuário insere nome, nickname e senha.
-3.O usuário clica no botão “Inserir”.
-4.O sistema armazena o usuário e informa que a operação foi realizada.
-5.O sistema retorna ao início do caso de uso para inclusão de novo usuário. 
+1. O sistema apresentara um formulário com os campos do usuário a ser inserido
+2. O usuário insere nome, nickname e senha.
+3. O usuário clica no botão “Inserir”.
+4. O sistema armazena o usuário e informa que a operação foi realizada.
+5. O sistema retorna ao início do caso de uso para inclusão de novo usuário. 
 
 
 **Fluxo Alternativo A**
-1.O sistema apresentara um formulário com os campos do usuário a ser inserido.
-2.O usuário insere nome,  nickname e senha.
-3.O usuário clica no botão “Inserir”.
-4.O sistema informa que o endereço de nickname  está incorreto.
-5.O usuário digita o nickname corretamente e clica no botão “ENTRA”.
-6.O sistema armazena o usuário e informa que a operação foi realizada.
-7.O sistema retorna ao início do caso de uso para inclusão de novo usuário. 
+1. O sistema apresentara um formulário com os campos do usuário a ser inserido.
+2. O usuário insere nome,  nickname e senha.
+3. O usuário clica no botão “Inserir”.
+4. O sistema informa que o endereço de nickname  está incorreto.
+5. O usuário digita o nickname corretamente e clica no botão “ENTRA”.
+6. O sistema armazena o usuário e informa que a operação foi realizada.
+7. O sistema retorna ao início do caso de uso para inclusão de novo usuário. 
 
 
 **Fluxo alternativo B**
-1.O sistema apresentara um formulário com os campos do usuário a ser inserido.
-2.O usuário insere nome, nickname e senha.
-3.O usuário clica no botão “Inserir”.
-4.O sistema informa que já existe um usuário com o nickname fornecido e retorna.
-ao Fluxo Principal.
+1. O sistema apresentara um formulário com os campos do usuário a ser inserido.
+2. O usuário insere nome, nickname e senha.
+3. O usuário clica no botão “Inserir”.
+4. O sistema informa que já existe um usuário com o nickname fornecido e retorna ao Fluxo Principal.
 
 **Fluxo alternativo C**
-1.O sistema apresenta uma solicitação de criação de conta com as respectivas.
-  informações.
-2.O usuário clica no botão “Criar esta conta”
-3.O sistema exibe um formulário com os campos do uruário a ser inserido,
-   com nome, nickname e senha preenchido.
-4.O usuário clica no botão “Inserir”.
-5.O sistema armazena o aluno e informa ao usuário que a operação foi realizada. 
+1. O sistema apresenta uma solicitação de criação de conta com as respectivas informações.
+2. O usuário clica no botão “Criar esta conta”.
+3. O sistema exibe um formulário com os campos do uruário a ser inserido com nome, nickname e senha preenchido.
+4. O usuário clica no botão “Inserir”.
+5. O sistema armazena o aluno e informa ao usuário que a operação foi realizada. 
 
 
 ### CDU 03 fazer posts 
 
 **Fluxo Principal**
-1.O sistema apresenta um poster ao usuário.
-2.O usuário clica no botão de compartilhar.
-3.O poster é compartilhado na rede i-luno.
-4.O sistema encaminha o de volta a usuário para a timeline. 
+1. O sistema apresenta um poster ao usuário.
+2. O usuário clica no botão de compartilhar.
+3. O poster é compartilhado na rede i-luno.
+4. O sistema encaminha o de volta a usuário para a timeline. 
 
 **Fluxo alternativo A**
-1.O sistema apresenta um poster ao usuário.
-2.O usuário clica no botão errado.
-3.O sistema avisa ao usuário que opção estava errada.
-4.O usuário clica no botão correto. 
-5.O pots é compartilhado na rede i-luno.
-6.O sistema encaminha o de volta a usuário para a timeline.
+1. O sistema apresenta um poster ao usuário.
+2. O usuário clica no botão errado.
+3. O sistema avisa ao usuário que opção estava errada.
+4. O usuário clica no botão correto. 
+5. O pots é compartilhado na rede i-luno.
+6. O sistema encaminha o de volta a usuário para a timeline.
 
 **Fluxo alternativo B**
-1.O sistema apresenta uma timeline para ao usuário.
-2.O usuário escolhe compartilhar um posts clica no botão de compartilhar. 
-3.O sistema avisa ao usuário que ouve uma erro com a conexão.
-4.O usuário se reconcta a uma rede de internet.
-5.O usuário clica no botão de compartilhar.
-6.O poster é compartilhado na rede i-luno.
-7.O sistema encaminha o de volta a usuário para a timeline.
+1. O sistema apresenta uma timeline para ao usuário.
+2. O usuário escolhe compartilhar um posts clica no botão de compartilhar. 
+3. O sistema avisa ao usuário que ouve uma erro com a conexão.
+4. O usuário se reconcta a uma rede de internet.
+5. O usuário clica no botão de compartilhar.
+6. O poster é compartilhado na rede i-luno.
+7. O sistema encaminha o de volta a usuário para a timeline.
 
 **Fluxo alternativo C**
-1.O sistema apresenta uma timeline para ao usuário.
-2.O usuário escolhe compartilhar um posts clica no botão de compartilhar.
-3.O usuário clica no botão de compartilhar.
-4.O usuário deseja excluir a publicação.
-5.O usuário clica no botão excluir.
-6.O compartilhamento é excluído da rede .
-7.O sistema encaminha o de volta a usuário para a timeline.
+1. O sistema apresenta uma timeline para ao usuário.
+2. O usuário escolhe compartilhar um posts clica no botão de compartilhar.
+3. O usuário clica no botão de compartilhar.
+4. O usuário deseja excluir a publicação.
+5. O usuário clica no botão excluir.
+6. O compartilhamento é excluído da rede .
+7. O sistema encaminha o de volta a usuário para a timeline.
 
 ### CDU 04 Curtir postagens
 
 
 **Fluxo Principal**
-1. a rede i-luno apresenta diversos postes para seus usuários.
+1. A rede i-luno apresenta diversos postes para seus usuários.
 2. O usuário escolhe a postagem  que mais lhe interessa. 
-3. clica no botão curti.
-4. após o click no botão curtir a publicação esta curtida. 
+3. Clica no botão curti.
+4. Após o click no botão curtir a publicação esta curtida. 
 
 
 
 **Fluxo alternativo A**
-1.A rede i-luno apresenta diversos postes para seus usuários.
-2.O usuário curte uma publicaçao sem querer.
-3.O usuário pode volta na publicaçao clicar no botão de curti.
-4.E o deslike naquela publicação ocorrera.
-5.O sistema encaminha o de volta a usuário para a timeline.
+1. A rede i-luno apresenta diversos postes para seus usuários.
+2. O usuário curte uma publicaçao sem querer.
+3. O usuário pode volta na publicaçao clicar no botão de curti.
+4. E o deslike naquela publicação ocorrera.
+5. O sistema encaminha o de volta a usuário para a timeline.
 
 
 ### CDU 05 postar comentários 
