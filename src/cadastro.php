@@ -90,12 +90,13 @@
         // VERIFICA SE NÃO HOUVE ERRO 
         if($erro == 0) {
             $sql = "UPDATE usuarios SET username = '$username', senha = '$senha',";
-            $sql .= "nome = '$nome', idade = $idade, email = '$email' "; 
+            $sql .= "nome = '$nome'"; 
             $sql .= "WHERE cod_usuario = $cod_usuario;";
             mysqli_query($mysqli,$sql);  
             echo "<br>O usuário foi atualizado com sucesso!";
-            echo "<br><a href='index_aula16.php'>Página Inicial</a>";
+            echo "<br><a href='index.php'>Página Inicial</a>";
         }
     }
     mysqli_close($mysqli);
 ?>
+
