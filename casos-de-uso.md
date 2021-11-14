@@ -199,6 +199,83 @@
 6. O poster é salvo.   
 7. O sistema encaminha o de volta a usuário para a timeline. 
 
+### CDU 07 BUSCA DE Usuário
+**Fluxo Principal**
+
+1. O sistema vai apresenta uma barra com opção de pesquisar .
+2. O usuário digita o nome de um perfil que deseja procurar. 
+3. O usuário clica no botão "pesquisa".
+4. O sistema vai exibir o perfil que foi pesquisado 
+  
+**Fluxo alternativo A 
+
+1. O sistema vai apresenta uma barra com opção de pesquisar .
+2. O usuário digita o nome de um perfil que deseja procurar. (caso o usuário não exista) 
+3. O usuário clica no botão "pesquisa".
+4. O sistema vai exibir a seguinte mensagem "Nenhum resultado encontrado".
+
+### CDU 08 LISTA DE USUÁRIO
+
+
+
+**Fluxo Principal**
+1. O sistema vai apresenta um formulario com a lista de usuários.
+2. O administrador escolher um perfil para exclui. 
+3. O administrador clica no botão "exclui".
+4. O sistema vai exibir a sequinte mensagem " tem certeza que deseja excluir  o usuário"
+5. O administrador clica no botão "ok".  
+6. O sistema exibirá que "o usurio foi  excluído com sucesso". 
+
+
+
+**Fluxo Alternativo A**
+1. O sistema vai apresenta um formulario com a lista de usuários.
+2. O administrador escolher um perfil para exclui. 
+3. O administrador clica no botão "exclui".
+4. O sistema vai exibir a sequinte mensagem " Não foi possível excluir o usuário".
+5. O sistema encaminhara o administrador para a pagina inicial.
+
+### CDU 09 CONTROLE DE USUÁRIO
+
+
+**Fluxo Principal **
+
+1. A rede i-luno disponibiliza uma pagina de controle aos administradores.
+2. Onde o administrador tem acesso a todo os usuários da rede.
+3. Os administadores podem excluir e editar informações da rede.
+4. Os administradores podem conceder privilégios de adms aos usuários.
+
+
+### CDU 010EDIÇÃO
+
+
+**Fluxo Principal **
+
+1. A rede i-luno disponibiliza uma pagina de controle aos administradores.
+2. Onde o administrador tem acesso a todo os usuários da rede.
+3. Um usuário deseja mudar sua username mas só o adm pode fazer isso.
+4. O administrador concede privilegios de amds ao usuário.
+5. O usuário edita seu username.
+6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso" 
+
+
+**Fluxo alternativo A**
+
+1. O sistema vai apresenta uma pagina de controle aos administradores.
+2. Onde o administrador tem acesso a todo os usuários da rede.
+3. Um usuário deseja exclui só o adm pode fazer isso.
+4. O administrador concede privilegios de amds ao usuário.
+5. O usuário exclui seu perfil.
+6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso" 
+
+
+**Fluxo alternativo B**
+1. A rede i-luno disponibiliza uma pagina de controle aos administradores.
+2. Onde o administrador tem acesso a todo os usuários da rede.
+3. Um usuário deseja mudar sua senha mas só o adm pode fazer isso.
+4. O administrador concede privilegios de amds ao usuário.
+5. O usuário edita sua senha.
+6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso"
 
 
 
