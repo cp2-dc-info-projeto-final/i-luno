@@ -21,10 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `i-luno`
 --
-
+CREATE DATABASE `ilunoo`;
 -- --------------------------------------------------------
-
---
+USE `ilunoo`;
 -- Estrutura da tabela `administrador`
 --
 
@@ -52,15 +51,13 @@ CREATE TABLE `postagem` (
 
 CREATE TABLE `usuarios` (
   `id` int(10) NOT NULL,
-  `nome` varchar(100) NOT NULL,
-  `login` varchar(100) NOT NULL,
+  `nomUsuario` varchar(100) NOT NULL,
   `senha` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
-
 --
 -- Indexes for table `administrador`
 --
@@ -77,7 +74,7 @@ ALTER TABLE `postagem`
 --
 -- Indexes for table `usuários`
 --
-ALTER TABLE `usuários`
+ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -87,7 +84,7 @@ ALTER TABLE `usuários`
 --
 -- AUTO_INCREMENT for table `usuários`
 --
-ALTER TABLE `usuários`
+ALTER TABLE `usuarios`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
