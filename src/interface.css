@@ -1,5 +1,6 @@
 <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
+   
+body {font-family: Arial, Helvetica, sans-serif;}
     form {border: 3px solid #43a759;}
     
     /* Classe responsável pelo padrão do */
@@ -38,9 +39,7 @@
     }
     
     .container {
-      padding: 16px;
-      position:absolute;
-      right: 50px;
+      padding: 16px; 
     }
     
     span.psw {
@@ -49,4 +48,4 @@
     }
     
     
-    </style>
+</style>
