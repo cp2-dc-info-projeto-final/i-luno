@@ -277,7 +277,59 @@
 5. O usuário edita sua senha.
 6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso"
 
+CDU 011  ###criação de postagem
 
+**Fluxo Principal **
+1. O sistema vai apresentar ao  usuário o botão de publicação.
+2. O usuário vai clicar no botão de publicação.
+3. O sistema vai apresentar uma página para o usuário criar sua publicação.
+4. O usuário vai ter opção de escrever uma publicação ou postar uma foto.
+5. O sistema apresentará ao Usuário o botão de publicar e a postagem do usuário estará criada.
+
+
+
+**Fluxo Alternativo A**
+
+1. O sistema vai apresentar ao  usuário o botão de publicação.
+2. O usuário vai clicar no botão de publicação.
+3. O sistema vai apresentar uma página para o usuário criar sua publicação.
+4. O usuário vai ter opção de escrever uma publicação ou postar uma foto.
+5. O sistema apresentará ao usuário o botão de publicar.
+6. O usuário clica no botão de publicar o sistema avisa ao usuário que ocorreu um erro ao tentar publicar a postagem. 
+7. O usuário tenta fazer a publicação novamente.
+6. O usuário clica no botão de publicar 
+ o sistema avisa ao Usuário que "a postagem foi publicada com sucesso".
+
+
+CDU 012 edição de post
+
+**Fluxo Principal**
+1. O sistema vai apresentar ao  usuário o botão de editar.
+2. O usuário vai clicar no botão de edição.
+3. O sistema vai apresentar uma página para o usuário editar  sua publicação.
+4. O usuário vai editar a publicação.
+5. O sistema apresentará ao usuário o botão de editar.
+6. O usuário clica no botão de editar
+ e postagem do usuário será editada.
+
+
+CDU 013 ###exclusão de post
+
+**Fluxo Principal**
+1. O sistema vai apresentar ao  usuário o botão de excluir.
+2. O usuário vai clicar no botão de excluir.
+3. O sistema vai apresentar uma mensagem ao usuário "deseja excluir essa publicação?".
+4. O usuário vai clicar no botão de excluir.
+5. A publicação é excluída timeline do usuário.
+
+CDU 014 ###Timeline
+
+**Fluxo Principal**
+1. O sistema vai apresentar ao  usuário uma timeline.
+2. Onde fica todas as publicações do usuário .
+3. Funções de edição, exclusão e criação de postagens.
+4. Na timeline os usuários podem interagir.
+5. Curtindo e comentando os posts um dos outros.
 
 
 
