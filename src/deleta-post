@@ -1,0 +1,2 @@
+<?php delete ("posts","id", $explode['1']);?>
+
