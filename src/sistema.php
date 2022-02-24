@@ -1,9 +1,9 @@
 <?php
    session_start();
    //print_r($_SESSION);
-   if((!isset($_SESSION['Nome']) == true) and (!isset($_SESSION['senha']) == true))
+   if((!isset($_SESSION['nomusu']) == true) and (!isset($_SESSION['senha']) == true))
    {
-    unset($_SESSION['Nome']);
+    unset($_SESSION['nomusu']);
     unset($_SESSION['senha']);
     header('location: index.php');
    }
@@ -38,8 +38,6 @@
         </div>
       </nav>
       <br>
-      <?php
-        echo "<h1>Bem vindo <u>$logado</u></h1>";
-      ?>
+      
 </body>
 </html>
