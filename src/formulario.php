@@ -39,7 +39,7 @@ if (isset($_POST['submit']))
         $mysqli = mysqli_connect("localhost","root","","banco");
         $sql = "INSERT INTO usuarios (nome,nomUsuario,senha)";
         $sql .= "VALUES ('$nome','$nomusu','$senha')";
-        mysqli_query($mysqli,$sql);
+        mysqli_execute($mysqli,$sql);
         mysqli_close($mysqli);      
         echo '<script type ="text/JavaScript">';
         echo 'alert("Usuário cadastrado!!")';
