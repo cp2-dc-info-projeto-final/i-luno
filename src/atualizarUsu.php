@@ -1,19 +1,17 @@
 <?php
-      
-    include_once ('conecta.php');
-    if (isset($_POST ['atualizar']))
+    include_once('conecta.php');
+
+    if(isset($_POST[ 'atualizar']))
     {
-        $id = $_POST ['id'];
+        $id = $_POST['id'];
         $nome = $_POST['nome'];
-        $nomusu = $_POST['nomusu'];
+        $nomUsu = $_POST['nomusu'];
         $senha = $_POST['senha'];
         
-        
-        $sqlInsert = "ATUALIZAR usuarios
-        SET nome='$nome',senha='$senha',nomusu='$nomusu' WHERE id=$id";
-        $resultado = $conexao -> consulta($sqlInsert);
-        print_r($resultado);
+        $sqlUpdate = "UPDATE usuarios SET nome='$nome',senha='$senha',nomusu='$nomusu' WHERE id=$id";
+        $result = $conexao->query($sqlUpdate);
+        print_r($result);
     }
-     header('Location: sistema.php');
+    header('Location: formulario.php');
 
 ?>
