@@ -22,7 +22,7 @@ Sed sit amet ante sem. Nunc id sapien metus. Etiam lobortis in purus ut porta. V
 
 **Diagrama de Classes**
 
-![Diagrama de Classes](casosdeuso.jpg)
+![Diagrama de Classes](casos_de_uso (1).jpg)
 
 **Modelagem do Banco de Dados**
 
