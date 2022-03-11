@@ -21,6 +21,11 @@ SET time_zone = "+00:00";
 --
 -- Database: `iluno`
 --
+CREATE DATABASE IF NOT EXISTS seubanco DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE seubanco;
+DROP USER IF EXISTS 'root'@'Localhost';
+CREATE USER 'root'@'Localhost' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost';
 
 -- --------------------------------------------------------
 
