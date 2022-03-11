@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `banco`
+-- Database: `iluno`
 --
 
 -- --------------------------------------------------------
@@ -77,9 +77,9 @@ CREATE TABLE `postagem` (
 
 CREATE TABLE `usuarios` (
   `id` int(10) NOT NULL,
-  `nome` int(50) NOT NULL,
+  `nome` varchar(50) NOT NULL,
   `nomUsuario` varchar(50) NOT NULL,
-  `senha` varchar(100) NOT NULL,
+  `senha` int(100) NOT NULL,
   `conteúdo` varchar(10000) DEFAULT NULL,
   `admin` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
