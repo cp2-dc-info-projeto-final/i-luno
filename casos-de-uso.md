@@ -8,7 +8,14 @@
  - [CDU 04](#CDU-04): Curtir posts;
  - [CDU 05](#CDU-05): Comentar posts;
  - [CDU 06](#CDU-06): Salvar posts;
-
+ - [CDU 07](#CDU-07):
+ - [CDU 08](#CDU-08):
+ - [CDU 09](#CDU-09):
+ - [CDU 10](#CDU-10):
+ - [CDU 11](#CDU-11):
+ - [CDU 12](#CDU-12):
+ - [CDU 13](#CDU-13):
+ - [CDU 14](#CDU-14):
 
 
 ## Lista dos Atores
@@ -238,7 +245,7 @@
 ### CDU 09 CONTROLE DE USUÁRIO
 
 
-**Fluxo Principal **
+**Fluxo Principal**
 
 1. A rede i-luno disponibiliza uma pagina de controle aos administradores.
 2. Onde o administrador tem acesso a todo os usuários da rede.
@@ -246,10 +253,10 @@
 4. Os administradores podem conceder privilégios de adms aos usuários.
 
 
-### CDU 010EDIÇÃO
+### CDU 010 EDIÇÃO
 
 
-**Fluxo Principal **
+**Fluxo Principal**
 
 1. A rede i-luno disponibiliza uma pagina de controle aos administradores.
 2. Onde o administrador tem acesso a todo os usuários da rede.
@@ -277,9 +284,9 @@
 5. O usuário edita sua senha.
 6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso"
 
-CDU 011  ###criação de postagem
+### CDU 011 criação de postagem
 
-**Fluxo Principal **
+**Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de publicação.
 2. O usuário vai clicar no botão de publicação.
 3. O sistema vai apresentar uma página para o usuário criar sua publicação.
@@ -301,7 +308,7 @@ CDU 011  ###criação de postagem
  o sistema avisa ao Usuário que "a postagem foi publicada com sucesso".
 
 
-CDU 012 edição de post
+### CDU 012 edição de post
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de editar.
@@ -313,7 +320,7 @@ CDU 012 edição de post
  e postagem do usuário será editada.
 
 
-CDU 013 ###exclusão de post
+### CDU 013 exclusão de post
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de excluir.
@@ -322,7 +329,7 @@ CDU 013 ###exclusão de post
 4. O usuário vai clicar no botão de excluir.
 5. A publicação é excluída timeline do usuário.
 
-CDU 014 ###Timeline
+### CDU 014 Timeline
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário uma timeline.
