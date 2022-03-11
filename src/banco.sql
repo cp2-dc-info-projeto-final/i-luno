@@ -3,15 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Fev-2022 às 18:57
+-- Generation Time: 10-Mar-2022 às 03:42
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
-
-CREATE DATABASE IF NOT EXISTS banco DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE banco;
-DROP USER IF EXISTS 'root'@'localhost';
-CREATE USER 'root'@'localhost' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON banco.* TO 'root'@'localhost';
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,6 +25,53 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(10) NOT NULL,
+  `usuarios_id` int(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `comentario`
+--
+
+CREATE TABLE `comentario` (
+  `id` int(10) NOT NULL,
+  `postagem_id` int(10) DEFAULT NULL,
+  `usuarios_id` int(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `curtida`
+--
+
+CREATE TABLE `curtida` (
+  `id` int(10) NOT NULL,
+  `postagem_id` int(10) DEFAULT NULL,
+  `usuarios_id` int(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `postagem`
+--
+
+CREATE TABLE `postagem` (
+  `id` int(11) NOT NULL,
+  `conteudo` varchar(5085) DEFAULT NULL,
+  `autor` varchar(100) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuarios`
 --
 
@@ -38,12 +79,44 @@ CREATE TABLE `usuarios` (
   `id` int(10) NOT NULL,
   `nome` int(50) NOT NULL,
   `nomUsuario` varchar(50) NOT NULL,
-  `senha` varchar(100) NOT NULL
+  `senha` varchar(100) NOT NULL,
+  `conteúdo` varchar(10000) DEFAULT NULL,
+  `admin` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `usuarios_id` (`usuarios_id`);
+
+--
+-- Indexes for table `comentario`
+--
+ALTER TABLE `comentario`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `postagem_id` (`postagem_id`),
+  ADD KEY `usuarios_id` (`usuarios_id`);
+
+--
+-- Indexes for table `curtida`
+--
+ALTER TABLE `curtida`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `postagem_id` (`postagem_id`),
+  ADD KEY `usuarios_id` (`usuarios_id`);
+
+--
+-- Indexes for table `postagem`
+--
+ALTER TABLE `postagem`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `autor` (`autor`);
 
 --
 -- Indexes for table `usuarios`
