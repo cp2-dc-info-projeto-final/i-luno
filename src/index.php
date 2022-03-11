@@ -13,10 +13,10 @@
     
     <div class="inputBox1">
         <h1>Login</h1>
-        <form action="testdrive.php" method="POST">
+        <form action="testdrive.php" method="POST" name="nomusu">
         <input type="text" placeholder="Nome de usuário">
         <br><br>
-        <input type="password" placeholder="Senha">
+        <input type="password" placeholder="Senha" name="senha">
         <br><br><br>
         <button class="btn" type="submit" name="submit">Login</button>
         <br><br><br>
