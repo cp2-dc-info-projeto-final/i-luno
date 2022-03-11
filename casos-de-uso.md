@@ -214,7 +214,7 @@
 3. O usuário clica no botão "pesquisa".
 4. O sistema vai exibir o perfil que foi pesquisado 
   
-**Fluxo alternativo A 
+**Fluxo alternativo A**
 
 1. O sistema vai apresenta uma barra com opção de pesquisar .
 2. O usuário digita o nome de um perfil que deseja procurar. (caso o usuário não exista) 
