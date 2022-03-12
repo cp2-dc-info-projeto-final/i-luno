@@ -8,14 +8,14 @@
  - [CDU 04](#CDU-04): Curtir posts;
  - [CDU 05](#CDU-05): Comentar posts;
  - [CDU 06](#CDU-06): Salvar posts;
- - [CDU 07](#CDU-07):
- - [CDU 08](#CDU-08):
- - [CDU 09](#CDU-09):
- - [CDU 10](#CDU-10):
- - [CDU 11](#CDU-11):
- - [CDU 12](#CDU-12):
- - [CDU 13](#CDU-13):
- - [CDU 14](#CDU-14):
+ - [CDU 07](#CDU-07): Busca de usuário;
+ - [CDU 08](#CDU-08): Lista de usuário;
+ - [CDU 09](#CDU-09): Controle de usuário;
+ - [CDU 10](#CDU-10): Edição;
+ - [CDU 11](#CDU-11): Criação de posts;
+ - [CDU 12](#CDU-12): Edição de posts;
+ - [CDU 13](#CDU-13): Exclusão de posts;
+ - [CDU 14](#CDU-14): Timeline
 
 
 ## Lista dos Atores
@@ -64,7 +64,7 @@
 5. O sistema encaminha o usuário para sua tela inicial.
 
 
-### CDU 02  cadastro de usuário 
+### CDU 02  Cadastro de usuário 
 
 **Fluxo Principal**
 
@@ -99,7 +99,7 @@
 5. O sistema armazena o aluno e informa ao usuário que a operação foi realizada. 
 
 
-### CDU 03 fazer posts 
+### CDU 03 Fazer posts 
 
 **Fluxo Principal**
 1. O sistema apresenta um poster ao usuário.
@@ -133,7 +133,7 @@
 6. O compartilhamento é excluído da rede .
 7. O sistema encaminha o de volta a usuário para a timeline.
 
-### CDU 04 Curtir postagens
+### CDU 04 Curtir post
 
 
 **Fluxo Principal**
@@ -152,7 +152,7 @@
 5. O sistema encaminha o de volta a usuário para a timeline.
 
 
-### CDU 05 postar comentários 
+### CDU 05 Postar comentários 
  
 **Fluxo Principal**
 1. Na parte inferios de cada postagem estará o botão de fazer comentários. 
@@ -206,7 +206,7 @@
 6. O poster é salvo.   
 7. O sistema encaminha o de volta a usuário para a timeline. 
 
-### CDU 07 BUSCA DE Usuário
+### CDU 07 Busca de Usuário
 **Fluxo Principal**
 
 1. O sistema vai apresenta uma barra com opção de pesquisar .
@@ -221,7 +221,7 @@
 3. O usuário clica no botão "pesquisa".
 4. O sistema vai exibir a seguinte mensagem "Nenhum resultado encontrado".
 
-### CDU 08 LISTA DE USUÁRIO
+### CDU 08 Lista de usuário
 
 
 
@@ -242,7 +242,7 @@
 4. O sistema vai exibir a sequinte mensagem " Não foi possível excluir o usuário".
 5. O sistema encaminhara o administrador para a pagina inicial.
 
-### CDU 09 CONTROLE DE USUÁRIO
+### CDU 09 Controle de usuário
 
 
 **Fluxo Principal**
@@ -253,7 +253,7 @@
 4. Os administradores podem conceder privilégios de adms aos usuários.
 
 
-### CDU 010 EDIÇÃO
+### CDU 010 Edição
 
 
 **Fluxo Principal**
@@ -284,7 +284,7 @@
 5. O usuário edita sua senha.
 6. O sistema envia a seguinte mensagem" Dados atualizado com sucesso"
 
-### CDU 011 criação de postagem
+### CDU 011 Criação de post
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de publicação.
@@ -308,7 +308,7 @@
  o sistema avisa ao Usuário que "a postagem foi publicada com sucesso".
 
 
-### CDU 012 edição de post
+### CDU 012 Edição de post
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de editar.
@@ -320,7 +320,7 @@
  e postagem do usuário será editada.
 
 
-### CDU 013 exclusão de post
+### CDU 013 Exclusão de post
 
 **Fluxo Principal**
 1. O sistema vai apresentar ao  usuário o botão de excluir.
