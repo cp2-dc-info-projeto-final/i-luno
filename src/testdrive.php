@@ -1,7 +1,7 @@
 <?php
     session_start();
     //print_r($_REQUEST);
-    if(isset($_POST['submit']) && !empty($_POST['nomusu']) && !empty($_POST['senha'])
+    if(isset($_POST['submit']) && !empty($_POST['nomusu']) && !empty($_POST['senha']))
     {
         //Acessa
         include_once('conectar.php')
