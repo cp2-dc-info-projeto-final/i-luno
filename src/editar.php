@@ -1,9 +1,9 @@
 <?php
     include_once('conecta.php');
 
-    if(!empty($_GET['id']))
+    if(!empty($_POS['id']))
     {
-        $id = $_GET['id'];
+        $id = $_POST['id'];
         $sqlSelect = "SELECT * FROM usuarios WHERE id=$id";
         $result = $conexao->query($sqlSelect);
         if($result->num_rows > 0)
@@ -12,7 +12,7 @@
             {
                 $nome = $user_data['nome'];
                 $senha = $user_data['senha'];
-                $nomusu = $user_data['Nome de usuário'];
+                $nomusu = $user_data['numusu'];
                 
             }
         }
