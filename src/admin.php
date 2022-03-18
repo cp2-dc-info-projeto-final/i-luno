@@ -1,18 +1,19 @@
 <?php
     session_start();
     include_once('conecta.php');
-    // print_r($_SESSION);
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    print_r($_SESSION);
+    if((!isset($_SESSION['nome']) == true) and (!isset($_SESSION['senha']) == true))
     {
-        unset($_SESSION['email']);
+        unset($_SESSION['nome']);
         unset($_SESSION['senha']);
-        header('Location: login.php');
+        
+        
     }
-    $logado = $_SESSION['email'];
+    $logado = $_SESSION['nome'];
     if(!empty($_GET['search']))
     {
         $data = $_GET['search'];
-        $sql = "SELECT * FROM usuarios WHERE id LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY id DESC";
+        $sql = "SELECT * FROM usuarios WHERE id LIKE '%$data%' or nome LIKE '%$data%' or nome LIKE '%$data%' ORDER BY id DESC";
     }
     else
     {
@@ -28,7 +29,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>SISTEMA DE ADMINISTRAÇÃO </title>
-    
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            color: white;
+            text-align: center;
+        }
+        .table-bg{
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px 15px 0 0;
+        }
+
+        .box-search{
+            display: flex;
+            justify-content: center;
+            gap: .1%;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -72,7 +89,7 @@
                         echo "<td>".$user_data['id']."</td>";
                         echo "<td>".$user_data['nome']."</td>";
                         echo "<td>".$user_data['senha']."</td>";
-                        echo "<td>".$user_data['nomeUsuario']."</td>";
+                        echo "<td>".$user_data['nomUsuario']."</td>";
                         echo "<td>
                         <a class='btn btn-sm btn-primary' href='editar.php?id=$user_data[id]' title='EditarUsu'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
@@ -104,7 +121,7 @@
 
     function searchData()
     {
-        window.location = 'sistema.php?search='+search.value;
+        window.location = 'admin.php?search='+search.value;
     }
 </script>
 </html>
