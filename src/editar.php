@@ -32,14 +32,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Edição</title>
+    <title> Formulario de Edição </title>
    
     <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
 
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method=POST>
+        <form action="formulario de ediçao.php" method=POST>
             <fieldset>
 
     <a href="admin
@@ -47,7 +47,7 @@
     <div class="box">
         <form action="atualizarUsu.php" method="POST">
             <fieldset>
-                <legend><b>Editar Usuário</b></legend>
+                <legend><b> Editar Usuário </b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
