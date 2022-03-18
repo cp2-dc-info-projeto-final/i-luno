@@ -1,42 +1,36 @@
-<?php
-    session_start();
-    //print_r($_REQUEST);
-    if(isset($_POST['submit']) && !empty($_POST['nomusu']) && !empty($_POST['senha']))
-    {
-        //Acessa
-        include_once('conectar.php')
-        $nomusu = $_POST['nomusu'];
-        $senha = $_POST['senha'];
+?php
+  
+ include_once('conecta.php');
 
-       // print_r('$nomusu: ' . $nomusu);
-       // print_r('<br>');
-       // print_r('senha: ' . $senha);
+if(isset ($_POST['nomusu']) && isset($_POST['senha'])){    
+    $nome = $_POST['nomusu'];
+    $senha =$_POST['senha'];
 
-       $sql="SELECT * FROM usuarios WHERE email = '$nomusu' and senha = '$senha'";
+    $_GET = mysqli_query("SELECT * FROM usuarios WHERE nome= '$nomusu' AND senha = '$senha'");
+    $num = mysqli_num_ruws($_GET);
 
-       $result = $conexão->query($sql);
+    if ($num == 1 ){
+     while ($percorer = mysqli_fetch_array($_GET)){    
+      $adm = $percorer ['adm'];
+      $nome = $percorer['nome'];
 
-       // print_r($sql);
-       // print_r($result);
 
-       if(mysqli_num_rows($result)< 1)
-       {
-          unset($_SESSION['nomusu'] = $nomusu);
-          unset($_SESSION['senha'] = $senha);
-          header('location: index.php'); 
-       }
-       else
-       {
-           $_SESSION['nomusu'] = $nomusu;
-           $_SESSION['senha'] = $senha;
-          header('location: sistema.php');
-       }
+      session_start();
+      if($adm == 1){
+      $_SESSION[$adm] = $nome;
+      }else{ 
+       $_SESSION['normal'] = $nome;
+
+
+     }
+     echo '<script type=" text/javascript">window.location = "dentro.php"</script>';
+
     }
-    else
-    {
-        //Não acessa
-        header('location:index.php');
-    }
+}else{  
+    echo ' Nome ou senha digitos estão incorretos.';
+}
 
-    echo  "<script>alert('Não foi possivel fazer o login!);</script>";
+} 
+
+
 ?>
