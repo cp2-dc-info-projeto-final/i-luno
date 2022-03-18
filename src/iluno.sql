@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 10-Mar-2022 às 03:42
+-- Generation Time: 18-Mar-2022 às 15:57
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -21,11 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `iluno`
 --
-CREATE DATABASE IF NOT EXISTS seubanco DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE seubanco;
-DROP USER IF EXISTS 'root'@'Localhost';
-CREATE USER 'root'@'Localhost' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost';
 
 -- --------------------------------------------------------
 
@@ -71,7 +66,9 @@ CREATE TABLE `curtida` (
 CREATE TABLE `postagem` (
   `id` int(11) NOT NULL,
   `conteudo` varchar(5085) DEFAULT NULL,
-  `autor` varchar(100) DEFAULT NULL
+  `autor` varchar(100) DEFAULT NULL,
+  `path` varchar(100) DEFAULT NULL,
+  `Data_upload` datetime(6) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -82,12 +79,20 @@ CREATE TABLE `postagem` (
 
 CREATE TABLE `usuarios` (
   `id` int(10) NOT NULL,
-  `nome` varchar(50) NOT NULL,
+  `nome` varchar(100) DEFAULT NULL,
   `nomUsuario` varchar(50) NOT NULL,
-  `senha` int(100) NOT NULL,
+  `senha` varchar(100) NOT NULL,
   `conteúdo` varchar(10000) DEFAULT NULL,
   `admin` int(2) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `nomUsuario`, `senha`, `conteúdo`, `admin`) VALUES
+(1, 'Rafael Gomes', 'Rafa', '12345678', 'oiuydguaubousaboipbfdaoebfbidvci', 1),
+(3, 'Maria clara', 'Clarinha', '145698723', 'klyoodutuoiu', 0);
 
 --
 -- Indexes for dumped tables
@@ -137,7 +142,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
