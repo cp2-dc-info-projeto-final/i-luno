@@ -7,8 +7,11 @@ session_start();
 
 if(isset($_SESSION['adm'])){ 
     echo'Bem-vindo'. $_SESSION ['adm'].' - ADMINISTRADOR';
-     }else if (isset($_SESSION['normal'])){  
+      header(location:admin.php);
+    
+    }else if (isset($_SESSION['normal'])){  
         echo 'Bem-vindo'. $_SESSION['normal']. ''; 
+    header(location:paginainicial.php);
       
 
     }else{  
