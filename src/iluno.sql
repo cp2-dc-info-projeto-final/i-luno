@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+- phpMyAdmin SQL Dump
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
@@ -20,8 +20,12 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `iluno`
---
-
+-- 
+CREATE DATABASE IF NOT EXISTS iluno DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE iluno;
+DROP USER IF EXISTS 'root'@'localhost';
+CREATE USER 'root'@'localhost' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost'; 
 -- --------------------------------------------------------
 
 --
