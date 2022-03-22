@@ -3,7 +3,7 @@
     $dbHost = 'Localhost';
     $dbUsername = 'root';
     $dbPassword = '';
-    $dbName = 'banco';
+    $dbName = 'iluno';
     
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
