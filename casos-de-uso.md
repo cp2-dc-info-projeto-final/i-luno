@@ -15,7 +15,8 @@
  - [CDU 11](#CDU-11): Criação de posts;
  - [CDU 12](#CDU-12): Edição de posts;
  - [CDU 13](#CDU-13): Exclusão de posts;
- - [CDU 14](#CDU-14): Timeline
+ - [CDU 14](#CDU-14): Timeline;
+ - [CDU 15](#CDU-15): Conseder e retirar privilégios de administrador;
 
 
 ## Lista dos Atores
@@ -334,11 +335,34 @@
 ### CDU 014 Timeline
 
 **Fluxo Principal**
-1. O sistema vai apresentar ao  usuário uma timeline.
-2. Onde fica todas as publicações do usuário .
-3. Funções de edição, exclusão e criação de postagens.
-4. Na timeline os usuários podem interagir.
-5. Curtindo e comentando os posts um dos outros.
+
+1. A página da timeline vai conter os posts do usuário. 
+2. Uma barra de "pesquisa" para o usuário buscar perfil de outros usuários. 
+3. A timeline vai ter a opção do usuário editar seu perfil.
+4. Na timeline o usuário também terá a opção de fazer logout. 
+
+
+### CDU 015 Conseder e retirar privilégios de administrador
+
+**Fluxo principal** 
+
+1. Ao fazer login na rede iluno o usuário tem que dizer o nível de acesso.
+2. Se o nível de acesso for 1 o usuário é um administrador.
+3. O usuário é recionado a pagina do sistema de Gerenciamento.
+4. Onde pode fazer excluir, atualizar, ver a lista de usuários, pesquisar e excluir seu cadastro ou de outro usuário.
+
+**Fluxo Alternativo A**
+1. Ao fazer login na rede iluno usuário tem que dizer o seu nível de acesso. 
+2. Se o nível de acesso do usuário for diferente de 1.
+3. O usuário é um usuário comum.
+4. E será recionado pelo sistema para a timeline.
+
+
+**Fluxo Alternativo B**
+1. Para a retirada dos privilégios de administrador.
+2. Pode ser excluindo o usuário da rede ailuno. 
+3. Também pode ser trocando o nível de acesso do usuário.
+
 
 
 
