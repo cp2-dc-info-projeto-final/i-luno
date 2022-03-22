@@ -11,7 +11,7 @@
  - [CDU 07](#CDU-07): Busca de usuário;
  - [CDU 08](#CDU-08): Lista de usuário;
  - [CDU 09](#CDU-09): Controle de usuário;
- - [CDU 10](#CDU-10): Edição;
+ - [CDU 10](#CDU-10): Edição de usuários;
  - [CDU 11](#CDU-11): Criação de posts;
  - [CDU 12](#CDU-12): Edição de posts;
  - [CDU 13](#CDU-13): Exclusão de posts;
