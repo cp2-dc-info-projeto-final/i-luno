@@ -8,7 +8,7 @@
  - [CDU 04](#CDU-04): Curtir posts;
  - [CDU 05](#CDU-05): Comentar posts;
  - [CDU 06](#CDU-06): Salvar posts;
- - [CDU 07](#CDU-07): Busca de usuário;
+ - [CDU 07](#CDU-07): Busca de usuário por palavra chave;
  - [CDU 08](#CDU-08): Lista de usuário;
  - [CDU 09](#CDU-09): Controle de usuário;
  - [CDU 10](#CDU-10): Edição de usuários;
@@ -206,13 +206,15 @@
 6. O poster é salvo.   
 7. O sistema encaminha o de volta a usuário para a timeline. 
 
-### CDU 07 Busca de Usuário
+### CDU 07 Busca de Usuário por palavra chave
+
 **Fluxo Principal**
 
 1. O sistema vai apresenta uma barra com opção de pesquisar .
-2. O usuário digita o nome de um perfil que deseja procurar. 
+2. O usuário digita uma parte do nome do perfil que deseja procurar. 
 3. O usuário clica no botão "pesquisa".
-4. O sistema vai exibir o perfil que foi pesquisado 
+4. O sistema vai exibi perfis com nomes parecido com o que o usuário digitou.
+5. o usuário vai clica no perfil que deseja e navegar por ele. 
   
 **Fluxo alternativo A**
 
@@ -253,7 +255,7 @@
 4. Os administradores podem conceder privilégios de adms aos usuários.
 
 
-### CDU 010 Edição
+### CDU 010 Edição de usuários
 
 
 **Fluxo Principal**
