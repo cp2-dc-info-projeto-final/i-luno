@@ -27,7 +27,9 @@ if(isset ($_POST['nome']) && isset($_POST['senha'])){
 
     }
 }else{  
-    echo ' Nome ou senha digitos estão incorretos.';
+        echo '<script type ="text/JavaScript">';
+        echo 'alert("Nome ou senha digitos estão incorretos.")';
+        echo '</script>';
 }
 
 } 
