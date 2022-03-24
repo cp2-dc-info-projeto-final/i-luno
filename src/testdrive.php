@@ -6,32 +6,23 @@ if(isset ($_POST['nomusu']) && isset($_POST['senha'])){
     $nome = $_POST['nomusu'];
     $senha =$_POST['senha'];
 
-    $_GET = mysqli_query("SELECT * FROM usuarios WHERE nome= '$nomusu' AND senha = '$senha'");
+    $_GET = mysqli_query("SELECT * FROM usuarios WHERE nome= '$nomusu' AND senha = '$senha' AND  tipo='$tipo'");
     $num = mysqli_num_ruws($_GET);
 
-    if ($num == 1 ){
-     while ($percorer = mysqli_fetch_array($_GET)){    
-      $adm = $percorer ['adm'];
-      $nome = $percorer['nome'];
-
-
-      session_start();
-      if($adm == 1){
-      $_SESSION[$adm] = $nome;
-      }else{ 
-       $_SESSION['normal'] = $nome;
-       
-
-     }
-      
+    if ($tipo == 1 ){
+    header("location: admin.php"); 
+       }
+      else{
+      header("location: paginainicial.php"); 
+      }
     }
 }else{  
         echo '<script type ="text/JavaScript">';
         echo 'alert("Nome ou senha digitos estão incorretos.")';
         echo '</script>';
+        header("location: index.php"); 
 }
 
 } 
-header("location: paginainicial.php"); 
 
 ?>
