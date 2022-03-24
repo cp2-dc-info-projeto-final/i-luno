@@ -1,4 +1,4 @@
-?php
+<?php
   
  include_once('conecta.php');
 
@@ -20,17 +20,16 @@ if(isset ($_POST['nomusu']) && isset($_POST['senha'])){
       $_SESSION[$adm] = $nome;
       }else{ 
        $_SESSION['normal'] = $nome;
-
+       
 
      }
-     echo '<script type=" text/javascript">window.location = "dentro.php"</script>';
-
+      
     }
 }else{  
     echo ' Nome ou senha digitos estão incorretos.';
 }
 
 } 
-
+header("location: paginainicial.php"); 
 
 ?>
