@@ -27,7 +27,7 @@
     </svg>
     </a>
    <div class="dropdown-content">
-  <a href="editausu.php">Editar perfil</a>
+  <a href="editar.php">Editar perfil</a>
   <a href="sair.php">log out</a>
   </div>
 </div>
