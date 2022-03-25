@@ -10,19 +10,19 @@ if(isset ($_POST['nomusu']) && isset($_POST['senha'])){
     $num = mysqli_num_ruws($_GET);
 
     if ($tipo == 1 ){
-    header("location: admin.php"); 
+     
        }
-      else{
-      header("location: paginainicial.php"); 
+      
+     else{
+      
       }
     }
-}else{  
+     else{ 
+      
         echo '<script type ="text/JavaScript">';
         echo 'alert("Nome ou senha digitos estão incorretos.")';
         echo '</script>';
-        header("location: index.php"); 
+        
 }
-
-} 
-
+        header("location: paginainicial.php"); 
 ?>
