@@ -1,9 +1,9 @@
-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Mar-2022 às 15:57
+-- Generation Time: 24-Mar-2022 às 16:15
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -20,12 +20,8 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `iluno`
--- 
-CREATE DATABASE IF NOT EXISTS iluno DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE iluno;
-DROP USER IF EXISTS 'root'@'localhost';
-CREATE USER 'root'@'localhost' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost'; 
+--
+
 -- --------------------------------------------------------
 
 --
@@ -34,8 +30,17 @@ GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost';
 
 CREATE TABLE `admin` (
   `id` int(10) NOT NULL,
-  `usuarios_id` int(10) DEFAULT NULL
+  `usuarios_id` int(10) DEFAULT NULL,
+  `tipo` tinyint(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `admin`
+--
+
+INSERT INTO `admin` (`id`, `usuarios_id`, `tipo`) VALUES
+(1, 1, 1),
+(3, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -87,16 +92,17 @@ CREATE TABLE `usuarios` (
   `nomUsuario` varchar(50) NOT NULL,
   `senha` varchar(100) NOT NULL,
   `conteúdo` varchar(10000) DEFAULT NULL,
-  `admin` int(2) DEFAULT NULL
+  `admin` int(2) DEFAULT NULL,
+  `tipo` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `nomUsuario`, `senha`, `conteúdo`, `admin`) VALUES
-(1, 'Rafael Gomes', 'Rafa', '12345678', 'oiuydguaubousaboipbfdaoebfbidvci', 1),
-(3, 'Maria clara', 'Clarinha', '145698723', 'klyoodutuoiu', 0);
+INSERT INTO `usuarios` (`id`, `nome`, `nomUsuario`, `senha`, `conteúdo`, `admin`, `tipo`) VALUES
+(1, 'Rafael Gomes', 'Rafa', '12345678', 'oiuydguaubousaboipbfdaoebfbidvci', 1, 1),
+(3, 'Maria clara', 'Clarinha', '145698723', 'klyoodutuoiu', 0, 0);
 
 --
 -- Indexes for dumped tables
