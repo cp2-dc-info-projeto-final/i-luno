@@ -49,17 +49,17 @@
             <fieldset>
                 <legend><b> Editar Usuário </b></legend>
                 <br>
-                <div class="inputBox">
+                <div class="inputBox1">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
                     <label for="nome" class="labelInput">Nome completo</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
+                <div class="inputBox1">
                     <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
                     <label for="senha" class="labelInput">Senha</label>
                 </div>
                 <br><br>
-                <div class="inputBox">
+                <div class="inputBox1">
                     <input type="text" name="nomusu" id="nomusu" class="inputUser" value=<?php echo $nomusu;?> required>
                     <label for="nomusu" class="labelInput">Nome de Usuário</label>
                 </div>
