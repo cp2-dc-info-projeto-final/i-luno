@@ -20,8 +20,8 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 **Diagrama de Classes**
 
-![Diagrama de Classes](Untitled Diagram (1).drawio.png)
+![Diagrama de Classes](https://github.com/cp2-dc-info-projeto-final/i-luno/blob/main/diagrama%20de%20casos%20de%20uso.jpg)
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados](https://github.com/cp2-dc-info-projeto-final/i-luno/blob/main/diagrama%20de%20casos%20de%20uso.jpg)
+![Diagrama de Banco de Dados]
