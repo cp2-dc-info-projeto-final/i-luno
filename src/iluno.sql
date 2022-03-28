@@ -7,6 +7,12 @@
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
+CREATE DATABASE IF NOT EXISTS iluno DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE iluno;
+DROP USER IF EXISTS 'root'@'localhost';
+CREATE USER 'root'@'localhost' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost';
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
