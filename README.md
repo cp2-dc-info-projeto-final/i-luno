@@ -24,4 +24,4 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 **Modelagem do Banco de Dados**
 
-![Diagrama de Banco de Dados]
+![Diagrama de Banco de Dados](https://github.com/cp2-dc-info-projeto-final/i-luno/upload/main)
