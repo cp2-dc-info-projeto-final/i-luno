@@ -8,6 +8,8 @@ if (isset($_POST['submit']))
     $nome = $_POST['nome'];
     $nomusu = $_POST['nomusu'];
     $senha = $_POST['senha'];
+    $tipo = 1;
+    $erro = 0;
 
     if(strlen($nomusu) < 5){
         echo '<script type ="text/JavaScript">';  
@@ -35,16 +37,16 @@ if (isset($_POST['submit']))
     }
 // VERIFICA SE NÃO HOUVE ERRO 
     if($erro == 0) { 
-    
-        $mysqli = mysqli_connect("localhost","root","","banco");
-        $sql = "INSERT INTO usuarios (nome,nomUsuario,senha)";
-        $sql .= "VALUES ('$nome','$nomusu','$senha')";
-        mysqli_execute($mysqli,$sql);
-        mysqli_close($mysqli);      
+        
         echo '<script type ="text/JavaScript">';
         echo 'alert("Usuário cadastrado!!")';
         echo '</script>';
-        header("location: paginainicial.php"); 
+        header("location: paginainicial.php");
+        $mysqli = mysqli_connect("localhost","novailuno","12345678","iluno");
+        $sql = "INSERT INTO usuarios (nome, nomUsuario, senha, tipo)";
+        $sql .= "VALUES ('$nome','$nomusu','$senha','$tipo');";
+        mysqli_query($mysqli,$sql);
+        mysqli_close($mysqli);       
         
     }
 
