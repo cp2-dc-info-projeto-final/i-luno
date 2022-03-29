@@ -9,9 +9,9 @@
 
 CREATE DATABASE IF NOT EXISTS iluno DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE iluno;
-DROP USER IF EXISTS 'root'@'localhost';
-CREATE USER 'root'@'localhost' IDENTIFIED BY '';
-GRANT ALL PRIVILEGES ON iluno.* TO 'root'@'localhost';
+DROP USER IF EXISTS 'novailuno'@'localhost';
+CREATE USER 'novailuno'@'localhost' IDENTIFIED BY '12345678';
+GRANT ALL PRIVILEGES ON iluno.* TO 'novailuno'@'localhost';
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -97,8 +97,6 @@ CREATE TABLE `usuarios` (
   `nome` varchar(100) DEFAULT NULL,
   `nomUsuario` varchar(50) NOT NULL,
   `senha` varchar(100) NOT NULL,
-  `conteúdo` varchar(10000) DEFAULT NULL,
-  `admin` int(2) DEFAULT NULL,
   `tipo` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -106,9 +104,9 @@ CREATE TABLE `usuarios` (
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `nomUsuario`, `senha`, `conteúdo`, `admin`, `tipo`) VALUES
-(1, 'Rafael Gomes', 'Rafa', '12345678', 'oiuydguaubousaboipbfdaoebfbidvci', 1, 1),
-(3, 'Maria clara', 'Clarinha', '145698723', 'klyoodutuoiu', 0, 0);
+INSERT INTO `usuarios` (`id`, `nome`, `nomUsuario`, `senha`, `tipo`) VALUES
+(1, 'Rafael Gomes', 'Rafa', '12345678', 1),
+(3, 'Maria clara', 'Clarinha', '145698723', 0);
 
 --
 -- Indexes for dumped tables
