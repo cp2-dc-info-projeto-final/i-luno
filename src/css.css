@@ -94,11 +94,7 @@ legend{
     cursor: pointer;
     color: black;}
     
-.box-search{
-        display: flex;
-        justify-content: center;
-        gap: .1%;
-    }
+
 .btn{
         background-color: #55ACEE;
         border: none;
@@ -115,7 +111,7 @@ legend{
         color: black;
     }
     .btn2{
-        background-color: #fb0c04;
+        background-color: #242424;
         border: none;
         padding: 15px;
         width: 100%;
