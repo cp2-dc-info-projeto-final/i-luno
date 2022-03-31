@@ -37,10 +37,11 @@ if (isset($_POST['submit']))
     }
 // VERIFICA SE NÃO HOUVE ERRO 
     if($erro == 0) { 
-        
         echo '<script type ="text/JavaScript">';
-        echo 'alert("Usuário cadastrado!!")';
+        echo 'alert("Favor digitar seu nome")';
         echo '</script>';
+
+        
         header("location: paginainicial.php");
         $mysqli = mysqli_connect("localhost","novailuno","12345678","iluno");
         $sql = "INSERT INTO usuarios (nome, nomUsuario, senha, tipo)";
