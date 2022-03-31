@@ -1,38 +1,44 @@
 <?php
-include("conecta.php");
+include("conectar.php");
 
-if(isset ($_POST['nomUsuario']) || isset($_POST['senha'])){
+if(isset ($_POST['nomeusu']) || isset($_POST['senha'])){
   
-    if(strlen($_POST['nomUsuario'])== 0){    
-      echo"Preencha seu nome";
+    if(strlen($_POST['nomeusu'])== 0){    
+        echo '<script type ="text/JavaScript">';  
+        echo 'alert("Preencha seu nome")';  
+        echo '</script>';  
     }  else if(strlen($_POST['senha'])== 0){  
-      echo"Preencha com sua senha";
+        echo '<script type ="text/JavaScript">';  
+        echo 'alert("Preencha sua senha")';  
+        echo '</script>';
     } else {   
 
-      $nome = $mysli ->real_escape_string($_POST['nomUsuario']);
-      $senha = $mysli ->real_escape_string($_POST['senha']);
+      $nomeusu = $mysqli->real_escape_string($_POST['nomeusu']);
+      $senha = $mysqli->real_escape_string($_POST['senha']);
 
 
-       $sql_code = "SELECT * FROM  usuarios WHERE nomUsuario = '$nomUsuario' AND senha= '$senha'";
+       $sql_code = "SELECT * FROM  usuarios WHERE nomUsuario = '$nomeusu' AND senha= '$senha'";
        $sql_query = $mysqli->query($sql_code) or die ("Falha na execusão do código:" . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
 
         if($quantidade == 1){ 
             
-            $usuario = $sql_query->mysqli_fetch_assoc();
+            $usuario = $sql_query->fetch_assoc();
 
 
             if(!isset($_SESSION)) {  
              session_start();
          }
            $_SESSION['id'] = $usuario ['id'];
-           $_SESSION['nomUsuario'] = $usuario ['nomUsuario'];
+           $_SESSION['nomeusu'] = $usuario ['nomeusu'];
 
             header("location: paginainicial.php");
 
         }else{  
-         echo"Falha ao logar!! nome ou senha incorretos";
+            echo '<script type ="text/JavaScript">';  
+            echo 'alert("Nome de usuário ou senha incorretos")';  
+            echo '</script>';
         }
     
     }   
@@ -55,8 +61,8 @@ if(isset ($_POST['nomUsuario']) || isset($_POST['senha'])){
     
     <div class="inputBox1">
         <h1>Login</h1>
-        <form action="" method="POST" name="nomusu">
-        <input type="text" placeholder="Nome de usuário">
+        <form action="index.php" method="POST" >
+        <input type="text" name="nomeusu" placeholder="Nome de usuário">
         <br><br>
         <input type="password" placeholder="Senha" name="senha">
         <br><br><br>
