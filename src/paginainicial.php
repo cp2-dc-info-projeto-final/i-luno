@@ -1,3 +1,7 @@
+<?php
+include("seguro.php")
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,6 @@
     <title>i aluno</title>
     
     <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
-
 </head>
 <body>
     
@@ -43,21 +46,17 @@
 </nav>
     
 </body>
-
 <script>
     var search = document.getElementById('pesquisar');
-
     search.addEventListener("keydown", function(event) {
         if (event.key === "Enter") 
         {
             searchData();
         }
     });
-
     function searchData()
     {
         window.location = 'sistema.php?search='+search.value;
     }
 </script>
-
 </html>
