@@ -1,5 +1,5 @@
 <?php
-    //session_start();
+    session_start();
     include_once('conecta.php');
     print_r($_SESSION);
     if((!isset($_SESSION['nome']) == true) and (!isset($_SESSION['senha']) == true))
