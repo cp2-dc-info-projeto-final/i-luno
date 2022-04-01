@@ -1,5 +1,5 @@
 <?php
-include("conectar.php");
+include("conecta.php");
 
 if(isset ($_POST['nomeusu']) || isset($_POST['senha'])){
   
@@ -21,21 +21,33 @@ if(isset ($_POST['nomeusu']) || isset($_POST['senha'])){
        $sql_query = $mysqli->query($sql_code) or die ("Falha na execusão do código:" . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
+       
 
-        if($quantidade == 1){ 
+        if($quantidade == 1 )
+        { 
             
             $usuario = $sql_query->fetch_assoc();
+            $nor = $usuario ['tipo'];
 
-
-            if(!isset($_SESSION)) {  
-             session_start();
-         }
+            if(!isset($_SESSION))
+            {  
+                 if($nor == 1)
+                {
+                    session_start();
+                    header("location: paginainicial.php");
+                }else if(!isset($_SESSION) || ($nor == 0))
+                {
+                session_start();
+                header("location: admin.php");
+               } 
+            }
+           
            $_SESSION['id'] = $usuario ['id'];
            $_SESSION['nomeusu'] = $usuario ['nomeusu'];
-
-            header("location: paginainicial.php");
-
-        }else{  
+        
+        }
+        else
+        {  
             echo '<script type ="text/JavaScript">';  
             echo 'alert("Nome de usuário ou senha incorretos")';  
             echo '</script>';
