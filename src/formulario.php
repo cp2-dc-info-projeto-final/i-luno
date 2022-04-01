@@ -41,8 +41,8 @@ if (isset($_POST['submit']))
         echo 'alert("Favor digitar seu nome")';
         echo '</script>';
 
-        
-        header("location: paginainicial.php");
+
+        header("location: cadastroefetuado.php");
         $mysqli = mysqli_connect("localhost","novailuno","12345678","iluno");
         $sql = "INSERT INTO usuarios (nome, nomUsuario, senha, tipo)";
         $sql .= "VALUES ('$nome','$nomusu','$senha','$tipo');";
