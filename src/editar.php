@@ -1,7 +1,7 @@
 <?php
     include_once('conecta.php');
 
-    if(!empty($_POS['id']))
+    if(!empty($_POST['id']))
     {
         $id = $_POST['id'];
         $sqlSelect = "SELECT * FROM usuarios WHERE id=$id";
@@ -12,7 +12,7 @@
             {
                 $nome = $user_data['nome'];
                 $senha = $user_data['senha'];
-                $nomusu = $user_data['numusu'];
+                $nomusu = $user_data['nomusu'];
                 
             }
         }
@@ -39,13 +39,12 @@
 </head>
 <body>
     <div class="box">
-        <form action="formulario de ediçao.php" method=POST>
+        <form action="edicao.php" method=POST>
             <fieldset>
 
-    <a href="admin
-    .php">Voltar</a>
+    <a href="admin.php">Voltar</a>
     <div class="box">
-        <form action="atualizarUsu.php" method="POST">
+        <form action="atualiza.php" method="POST">
             <fieldset>
                 <legend><b> Editar Usuário </b></legend>
                 <br>
